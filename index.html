@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Fat Pigeon Bakery · Saturday sourdough in Bramley, Leeds</title>
+  <meta name="description" content="Concept site for Fat Pigeon Bakery, Ruth Diskin’s backyard coach-house bakery on Broad Lane, Bramley. Open Saturdays 9am–12pm. Sourdough, pastries and seasonal bakes." />
+  <meta property="og:title" content="Fat Pigeon Bakery · Bramley, Leeds" />
+  <meta property="og:description" content="A backyard bakery on Broad Lane. Sourdough, croissants, danishes and seasonal cakes. Saturdays 9am–12pm." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=Outfit:wght@360;480;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Fat Pigeon Bakery",
+    "description": "Micro-bakery in a converted 19th-century coach house on Broad Lane, Bramley, Leeds. Open Saturdays.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "406 Broad Lane",
+      "addressLocality": "Bramley, Leeds",
+      "postalCode": "LS13 3DF",
+      "addressCountry": "GB"
+    },
+    "email": "fatpigeonbakery@gmail.com",
+    "url": "https://www.instagram.com/fat_pigeon_bakery/",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "12:00"
+    },
+    "founder": "Ruth Diskin"
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #1c1712;
+      --cream: #f3ecdf;
+      --paper: #faf6ee;
+      --crust: #b5522a;
+      --crust-deep: #8a3b1c;
+      --sage: #5d6b45;
+      --butter: #e4c98a;
+      --line: rgba(28,23,18,.12);
+      --shadow: 0 18px 50px rgba(48,28,12,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 90% -10%, #f7e2c4 0%, transparent 55%),
+        var(--cream);
+      font-family: Outfit, system-ui, sans-serif;
+      font-weight: 360;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    img, svg { max-width: 100%; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    header.nav {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(243,236,223,.82);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: Fraunces, serif; font-weight: 620; letter-spacing: -.02em; }
+    .brand small { display: block; font-family: Outfit, sans-serif; font-weight: 480; letter-spacing: .12em; font-size: 10px; text-transform: uppercase; color: var(--sage); }
+    nav.links { display: flex; gap: 18px; align-items: center; }
+    nav.links a { text-decoration: none; font-size: 14px; }
+    nav.links a:hover { color: var(--crust-deep); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--ink); color: var(--paper); text-decoration: none;
+      padding: 12px 18px; border-radius: 999px; font-weight: 600; font-size: 14px;
+      border: 0; cursor: pointer;
+    }
+    .btn.alt { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+    .btn:hover { transform: translateY(-1px); }
+    .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding: 64px 0 40px; }
+    .kicker { letter-spacing: .16em; text-transform: uppercase; font-size: 12px; color: var(--crust-deep); font-weight: 600; }
+    h1 { font-family: Fraunces, serif; font-weight: 620; font-size: clamp(42px, 6vw, 76px); line-height: .95; letter-spacing: -.035em; margin: 10px 0 16px; }
+    h1 em { font-style: italic; font-weight: 500; color: var(--crust); }
+    .lede { font-size: 18px; max-width: 46ch; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 18px; }
+    .meta-row { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; }
+    .meta-row span { border-left: 2px solid var(--butter); padding-left: 10px; }
+    .yard {
+      background: #241c16;
+      color: #f6efe4;
+      border-radius: 28px;
+      min-height: 420px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .yard svg.pigeon { width: 180px; position: absolute; right: 18px; bottom: 18px; }
+    .ticket {
+      background: #f6efe4; color: var(--ink); border-radius: 16px; padding: 16px 18px; max-width: 260px;
+      transform: rotate(-2deg);
+    }
+    .ticket strong { font-family: Fraunces, serif; font-size: 22px; display: block; }
+    .note { margin-top: 18px; font-size: 14px; max-width: 28ch; color: #eadfce; }
+    section { padding: 64px 0; }
+    h2 { font-family: Fraunces, serif; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.03em; line-height: 1; margin: 0 0 12px; }
+    .sub { max-width: 62ch; color: #3d342c; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      min-height: 180px;
+    }
+    .card h3 { font-family: Fraunces, serif; margin: 8px 0; font-size: 24px; }
+    .mark { width: 36px; height: 36px; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+    ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+    ol.steps li { counter-increment: step; padding: 16px 0 16px 58px; position: relative; border-bottom: 1px solid var(--line); }
+    ol.steps li::before {
+      content: counter(step, decimal-leading-zero);
+      position: absolute; left: 0; top: 16px;
+      font-family: Fraunces, serif; color: var(--crust); font-size: 22px;
+    }
+    blockquote {
+      margin: 0; background: #241c16; color: #f6efe4; border-radius: 22px; padding: 26px;
+    }
+    blockquote p { font-family: Fraunces, serif; font-size: 24px; line-height: 1.25; margin: 0 0 12px; }
+    blockquote cite { font-style: normal; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--butter); }
+    .quotes { display: grid; gap: 14px; }
+    details { border-bottom: 1px solid var(--line); padding: 14px 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    form { display: grid; gap: 10px; }
+    input, textarea, select {
+      width: 100%; border: 1px solid var(--line); background: #fff; border-radius: 12px;
+      padding: 12px 14px; font: inherit; color: inherit;
+    }
+    footer { padding: 28px 0 40px; font-size: 13px; color: #5c534a; border-top: 1px solid var(--line); }
+    .banner {
+      background: #efe2c8; border-bottom: 1px solid var(--line); font-size: 13px; text-align: center; padding: 8px 16px;
+    }
+    @media (max-width: 860px) {
+      .hero, .split, .grid-3 { grid-template-columns: 1fr; }
+      nav.links { display: none; }
+      .yard { min-height: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">Concept demo prepared for Fat Pigeon Bakery. Not the official site and not affiliated.</div>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="32" fill="#1c1712"/>
+          <path d="M14 38c6-2 10-8 14-8 2 6 8 10 16 8 2 6-2 12-10 13-8 1-16-2-20-13z" fill="#e4c98a"/>
+          <circle cx="40" cy="28" r="7" fill="#f6efe4"/>
+          <circle cx="42" cy="27" r="1.4" fill="#1c1712"/>
+          <path d="M46 29l8 2-8 3z" fill="#b5522a"/>
+        </svg>
+        <span>Fat Pigeon<small>Bramley · Leeds</small></span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#bakes">Bakes</a>
+        <a href="#saturday">Saturday</a>
+        <a href="#visit">Visit</a>
+        <a href="#ask">Ask</a>
+      </nav>
+      <a class="btn" href="#visit">Plan a Saturday</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <p class="kicker">Coach-house bakery · Broad Lane</p>
+        <h1>Come before eleven. The <em>fat pigeons</em> already have.</h1>
+        <p class="lede">Ruth Diskin bakes sourdough, croissants, danishes and seasonal cakes in a converted 19th-century coach house behind 406 Broad Lane. Open Saturday mornings, a couple of doors from Bramley Baths.</p>
+        <div class="cta-row">
+          <a class="btn" href="mailto:fatpigeonbakery@gmail.com?subject=Saturday%20at%20Fat%20Pigeon">Email the bakery</a>
+          <a class="btn alt" href="https://www.instagram.com/fat_pigeon_bakery/" rel="noopener">This week on Instagram</a>
+        </div>
+        <div class="meta-row">
+          <span>Saturdays 9am–12pm</span>
+          <span>LS13 3DF</span>
+          <span>Baking since 2023</span>
+        </div>
+      </div>
+      <aside class="yard" aria-label="Illustrated backyard bakery">
+        <div class="ticket">
+          <strong>Saturday counter</strong>
+          9am–12pm<br />Look for the A-frame on the path, then through the yard.
+        </div>
+        <p class="note">Named for the well-loved fat pigeons in the garden. Two giant pigeon sculptures by Nat of Pearly Rubble now live out front.</p>
+        <svg class="pigeon" viewBox="0 0 200 140" aria-hidden="true">
+          <ellipse cx="98" cy="118" rx="54" ry="8" fill="#000" opacity=".25"/>
+          <path d="M30 88c18-8 34-28 48-30 8 20 28 34 56 30 6 18-6 36-34 40-30 4-58-8-70-40z" fill="#e4c98a"/>
+          <path d="M78 70c8-22 24-34 42-30 4 10-2 22-14 28-12 6-24 6-28 2z" fill="#f6efe4"/>
+          <circle cx="112" cy="48" r="16" fill="#f6efe4"/>
+          <circle cx="118" cy="46" r="2.2" fill="#1c1712"/>
+          <path d="M126 50l22 4-20 7z" fill="#b5522a"/>
+          <path d="M70 96c10 8 22 10 36 6" fill="none" stroke="#8a3b1c" stroke-width="3"/>
+        </svg>
+      </aside>
+    </div>
+
+    <section id="bakes">
+      <div class="wrap">
+        <p class="kicker">What leaves the oven</p>
+        <h2>Bread first. Then the things people queue for.</h2>
+        <p class="sub">The counter changes with the week and the season. Ruth has said she uses Yorkshire flour where she can, especially for the bread, and keeps the menu small enough to bake herself.</p>
+        <div class="grid-3">
+          <article class="card">
+            <svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><path d="M6 22c2-8 8-12 12-12s10 4 12 12c-4 4-8 6-12 6s-8-2-12-6z" fill="#b5522a"/></svg>
+            <h3>Sourdough</h3>
+            <p>Weekend loaves, including specials such as roast potato and rosemary when it is on. Less white flour than a supermarket loaf, baked for the Saturday counter.</p>
+          </article>
+          <article class="card">
+            <svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 24c4-10 10-14 16-10 2 6-2 12-8 14-6 2-10 0-8-4z" fill="#e4c98a"/></svg>
+            <h3>Pastries</h3>
+            <p>Croissants and danishes. Neighbours have singled out the egg custard tart, and cheese and leek danish when it appears.</p>
+          </article>
+          <article class="card">
+            <svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="14" width="20" height="12" rx="3" fill="#5d6b45"/></svg>
+            <h3>Seasonal bits</h3>
+            <p>Cakes and short-run bakes. Rhubarb and asparagus when they are in season, with cheese, milk and butter from local suppliers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="saturday" style="background:#fff8ee">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">How a Saturday works</p>
+          <h2>Three hours. Then the gate closes.</h2>
+          <p>West Leeds Dispatch and The Hoot both record Saturday hours of 9am–12pm. Ruth has advised getting there before 11, when the queue is usually kinder.</p>
+          <ol class="steps">
+            <li><strong>Check Instagram the day before.</strong> Special loaves and what sold last week live on @fat_pigeon_bakery, not on a fixed menu.</li>
+            <li><strong>Find the A-frame on Broad Lane.</strong> The bakery is the coach house in the yard, a few doors from Bramley Baths and across from the park.</li>
+            <li><strong>Coffee is next door in the garden.</strong> Bramley Batch pours batch brews on site. Their Instagram is @bramley.batch.</li>
+            <li><strong>Parkrun crowd knows the drill.</strong> Bramley parkrun regulars often stop for breakfast after the run.</li>
+          </ol>
+        </div>
+        <div class="quotes">
+          <blockquote>
+            <p>“Best addition to Bramley since the baths… Best egg custard in the land.”</p>
+            <cite>Leeds Bread Co-op, quoted by West Leeds Dispatch</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Fat pigeon’s baked goods are 10/10.”</p>
+            <cite>Leeds-List, quoted by West Leeds Dispatch, Nov 2025</cite>
+          </blockquote>
+          <blockquote>
+            <p>At the first Bramley Moorfields market, Fat Pigeon almost sold out within the first hour.</p>
+            <cite>West Leeds Dispatch, on the market at Bramley Park</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">The yard</p>
+          <h2>Built in the back garden, on purpose.</h2>
+          <p>In 2023 Ruth Diskin converted a 19th-century coach house behind her Broad Lane house into Fat Pigeon. She had been baking at the Mill Kitchen in Farsley, and told West Leeds Dispatch the name comes from the pigeons in the garden.</p>
+          <p>She is part of the Yorkshire Grain Alliance, which works with bakers, millers and farmers on whole grains. Flour for the bread has been described as coming especially from Stringers in East Yorkshire. Cheese from a Bramley supplier, asparagus from Whiteley’s, rhubarb in season, and organic milk and butter.</p>
+          <p>Fat Pigeon Bakery Ltd (company 15060033) is registered at this address. Ruth Mary Diskin is the person with significant control.</p>
+        </div>
+        <div class="card">
+          <h3>Good to know</h3>
+          <p>Prices are not published in a fixed list. The 2024 bread subscription — a Friday loaf for four weeks — was offered by email. Whether that is running now is something to ask directly.</p>
+          <p>Gluten-free bakes have been asked about on Instagram. Nothing public confirms a free-from range, so check before you travel if that is essential.</p>
+          <p>No phone number is published. Email and Instagram are the public routes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">Visit</p>
+          <h2>406 Broad Lane, Bramley, LS13 3DF</h2>
+          <p>A short walk from Bramley Baths and Bramley Park. The counter is not a high-street shopfront — follow the A-frame through the yard to the coach house.</p>
+          <p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=406+Broad+Lane+Bramley+Leeds+LS13+3DF" rel="noopener">Open in Google Maps</a></p>
+          <p>Also seen at Moorfields market, reported as the third Sunday of the month at the entrance to Bramley Park. Confirm dates on Instagram before making a special trip.</p>
+        </div>
+        <form id="ask" action="mailto:fatpigeonbakery@gmail.com" method="post" enctype="text/plain">
+          <h3 style="font-family:Fraunces,serif;margin:0">Ask what is baking</h3>
+          <p class="sub">This opens your email app to fatpigeonbakery@gmail.com. It does not store the message.</p>
+          <label>Name<input name="name" required autocomplete="name" /></label>
+          <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+          <label>What do you want to know?
+            <select name="topic">
+              <option>Saturday counter</option>
+              <option>Loaf or pastry pre-order</option>
+              <option>Bread subscription</option>
+              <option>Celebration cake</option>
+              <option>Moorfields market</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Email Fat Pigeon</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="kicker">Questions people already ask</p>
+        <h2>Before you cross Leeds for a croissant.</h2>
+        <details open>
+          <summary>Are you only open on Saturdays?</summary>
+          <p>Published hours are Saturdays, 9am–12pm (West Leeds Dispatch, updated November 2025, and The Hoot, June 2026). An earlier 2023 report said 10am–12pm; the later articles corrected that.</p>
+        </details>
+        <details>
+          <summary>Where exactly is the door?</summary>
+          <p>406 Broad Lane, LS13 3DF. The bakery is the coach house in the back yard. An A-frame on the path marks the gate.</p>
+        </details>
+        <details>
+          <summary>Can I reserve a loaf?</summary>
+          <p>There is no public booking page. Email fatpigeonbakery@gmail.com or message @fat_pigeon_bakery. A four-week Friday bread subscription was offered in September 2024; confirm if it is still running.</p>
+        </details>
+        <details>
+          <summary>Who is in the garden besides the pigeons?</summary>
+          <p>Bramley Batch serves coffee in the garden. The pigeon sculptures are by Nat of Pearly Rubble.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Concept demo prepared for Fat Pigeon Bakery by Northlane Studio. Not affiliated. Facts drawn from West Leeds Dispatch (1 Nov 2023 and 4 Nov 2025), The Hoot Leeds (June 2026), Instagram @fat_pigeon_bakery, and Companies House via public company summaries for FAT PIGEON BAKERY LTD 15060033. Hours, menu and subscription status can change — confirm with the bakery.</p>
+    </div>
+  </footer>
+</body>
+</html>
